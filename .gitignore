@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# OS
+Thumbs.db
+Desktop.ini
