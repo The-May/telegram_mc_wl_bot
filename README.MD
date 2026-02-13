@@ -17,12 +17,6 @@
 
 
 
-## Screenshots
+## Screenshots (see folder)
 
 
-1
-https://github.com/The-May/telegram_mc_wl_bot/blob/main/pics/markdownoptions.png?raw=true
-
-2
-
-3
