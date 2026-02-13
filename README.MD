@@ -21,7 +21,7 @@
 
 
 1
-
+[Issuing /whitelist](https://github.com/The-May/telegram_mc_wl_bot/blob/main/pics/markdownoptions.png)
 2
 
 3
