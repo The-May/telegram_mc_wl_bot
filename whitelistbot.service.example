@@ -1,0 +1,28 @@
+# generic example systemd unit file /etc/systemd/system/whitelistbot.service
+# make sure to have user minecraft and group minecraft, otherwise change it accordingly -> useradd -r -U -d minecraft or run it whichever user you want to, i dont care
+# make sure the dirs are right enough - in my case i just did sudo chown -R minecraft:minecraft /opt/minecraft_spigot/server -> this script is is /tools and therefore also easily affected/fixed
+# make sure you have the right path where your logs should be saved and change accordingly - in my case it is /opt/minecraft_spigot/server/tools/telegram_mc_wl_bot
+# make sure that requires= equals your minecraft service
+
+
+[Unit]
+Description=Whitelist Bot
+After=minecraft.service network.target
+Requires=minecraft.service
+
+[Unit]
+Description=Whitelist Bot
+After=minecraft.service network.target
+Requires=minecraft.service
+
+[Service]
+Type=simple
+User=minecraft
+Group=minecraft
+WorkingDirectory=/opt/minecraft_spigot/server/tools/telegram_mc_wl_bot
+ExecStart=/opt/minecraft_spigot/server/tools/telegram_mc_wl_bot/venv/bin/python /opt/minecraft_spigot/server/tools/telegram_mc_wl_bot/bot.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
