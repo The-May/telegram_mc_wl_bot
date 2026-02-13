@@ -12,3 +12,16 @@
 6. write /start, read out from the created logfile from the bot and apply the CHAT IT and change accordingly
 7. copy system unit file and change accordingly -> **read comments**
 8. start unit with **systemctl start whitelistbot** and hope it works
+
+
+
+
+
+## Screenshots
+
+
+1
+
+2
+
+3
